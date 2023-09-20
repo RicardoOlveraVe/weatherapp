@@ -1,0 +1,88 @@
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+ul{
+  list-style: none;
+}
+
+body{
+  background-image: url(/fotografo-paisajes.jpg);
+  background-size: 200%;
+}
+
+
+.weather {
+  display: grid;
+  place-items: center;
+  margin: auto;
+  background-color: rgba(0, 0, 0, .3);
+  align-items: center;
+  margin: 200px auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 1.5rem;
+  width: 45vh;
+  z-index: 1;
+
+}
+
+.weather__title{
+  grid-column: span 3;
+  font-weight: 600;
+}
+
+.weather__city{
+  font-weight: 100;
+  grid-column: span 3;
+  font-size: 1.25rem;
+}
+
+.weather__img{
+  display: grid;
+  grid-column: span 1;
+}
+
+.weather__content{
+  position: relative;
+  display: flex;
+  grid-row: span 2;
+}
+.info2{
+  font-weight: 900;
+}
+
+.information-list{
+  grid-column: span3;
+}
+.weather__temp{
+  grid-column: span 3;
+  align-content: center;
+}
+.temp{
+  transform: translateX(35%);
+}
+
+.weather__btn{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 30px;
+  font-size: 1.25rem;
+  box-shadow: 0 0 10 rgba(0, 0, 0, .5);
+  background-color: aliceblue;
+  border-radius: 5px;
+}
